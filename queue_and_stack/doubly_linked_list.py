@@ -8,11 +8,6 @@ class ListNode:
         self.value = value
         self.next = next
 
-    def __str__(self):
-      return "value: {}".format(self.value)
-
-
-
     """Wrap the given value in a ListNode and insert it
   after this node. Note that this Node could already
   have a next node it is pointing to."""
@@ -62,7 +57,6 @@ class DoublyLinkedList:
 
     def add_to_head(self, value):
         new_node = ListNode(value, None, None)
-        print(new_node)
         self.length += 1
         if not self.head and not self.tail:
             self.head = new_node
