@@ -54,7 +54,7 @@ class LRUCache:
   def set(self, key, value):
     
     #check if key already exists, if yes update the value
-    if key in self.my_dict.keys():
+    if key in self.my_dict:
 
       #update dictionary
       self.my_dict.update({key:value})
