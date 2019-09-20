@@ -35,12 +35,6 @@ class BinarySearchTree:
     if self.value == target:
       return True
 
-    if self.left and target == self.left.value:
-      return True
-
-    if self.right and target == self.right.value:
-      return True
-
     if target < self.value:
 
       if self.left:
